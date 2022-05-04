@@ -14,12 +14,13 @@ export default memo(function ProductsTable({ products, fetchProducts }) {
             <th>Category</th>
             <th>Quantity</th>
             <th>Price</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
           {products.length === 0 ? (
             <tr className={styles.noProducts}>
-              <td colSpan={4}>You haven't added any products yet!</td>
+              <td colSpan={5}>You haven't added any products yet!</td>
             </tr>
           ) : (
             products.map((product) => (

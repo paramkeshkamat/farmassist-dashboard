@@ -35,7 +35,12 @@ export default function Products() {
 
   return (
     <>
-      {showAddProductModal && <AddProductsModal setShowAddProductModal={setShowAddProductModal} />}
+      {showAddProductModal && (
+        <AddProductsModal
+          setShowAddProductModal={setShowAddProductModal}
+          fetchProducts={fetchProducts}
+        />
+      )}
       <div>
         <h2 className={styles.title}>Your Products</h2>
         <button className={styles.addButton} onClick={() => setShowAddProductModal(true)}>

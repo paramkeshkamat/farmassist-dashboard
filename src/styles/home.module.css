@@ -1,1 +1,12 @@
-.homeContainer {}
+/** @format */
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.group > div {
+  flex: 1;
+}
