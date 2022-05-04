@@ -1,0 +1,51 @@
+/** @format */
+
+.messagesContainer {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.messagesContainer table {
+  width: 100%;
+  text-align: left;
+}
+
+.messagesContainer table,
+.messagesContainer table tr,
+.messagesContainer table th,
+.messagesContainer table td {
+  border-collapse: collapse;
+}
+
+.messagesContainer table th,
+.messagesContainer table td {
+  padding: 15px 10px;
+  border-bottom: 1px solid #d4d5d9;
+}
+
+.messagesContainer table td {
+  cursor: pointer;
+}
+
+.messagesContainer table th {
+  cursor: default;
+}
+
+.messagesContainer table tbody tr:hover {
+  background-color: var(--light-bg-color);
+}
+
+.noMessages {
+  text-align: center;
+  color: var(--secondary-text-color);
+  height: 200px;
+  cursor: default !important;
+}
+
+.noMessages td {
+  border-bottom: none !important;
+  cursor: default !important;
+}
+.noMessages:hover {
+  background: transparent !important;
+}

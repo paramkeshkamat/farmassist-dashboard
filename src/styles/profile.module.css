@@ -1,0 +1,44 @@
+/** @format */
+
+.profileContainer h2 {
+  margin-bottom: 30px;
+}
+
+.profileDetails {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 70px;
+  width: 650px;
+}
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.leftContainer img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.rightContainer b {
+  font-weight: 600;
+}
+
+.rightContainer p {
+  margin: 15px 0;
+}
+
+.changeButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}

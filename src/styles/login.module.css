@@ -1,0 +1,100 @@
+/** @format */
+
+.loginContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  background-color: var(--white-color);
+}
+
+.titleName {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 24px;
+}
+
+.titleName span {
+  color: var(--secondary-bg-color);
+  font-size: 32px;
+}
+
+.leftContainer {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+
+.leftContainer form {
+  width: 90vw;
+  max-width: 350px;
+  margin: auto;
+}
+
+.leftContainer h2 {
+  text-align: center;
+  color: var(--secondary-bg-color);
+  font-size: 28px;
+  margin-bottom: 35px !important;
+  position: relative;
+}
+.leftContainer h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: var(--secondary-bg-color);
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+}
+
+.leftContainer form > * {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.leftContainer form input[type="text"],
+.leftContainer form input[type="password"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #d4d5d9;
+}
+
+.leftContainer form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  color: var(--white-color);
+  background-color: var(--secondary-bg-color);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.rememberMe span {
+  margin-left: 10px;
+}
+.rememberMe input {
+  padding: 20px;
+  cursor: pointer;
+  accent-color: var(--secondary-bg-color);
+  height: 15px;
+  width: 15px;
+}
+
+.rightContainer {
+  flex: 2;
+  background-image: url("/public/doodles/green.jpg");
+}

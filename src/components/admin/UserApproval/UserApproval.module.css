@@ -1,0 +1,24 @@
+/** @format */
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #d4d5d9;
+  margin-bottom: 20px;
+}
+
+.tabs p {
+  margin-right: 50px;
+  padding-bottom: 4px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+}
+
+.active {
+  border-bottom: 3px solid var(--secondary-bg-color) !important;
+}

@@ -1,0 +1,50 @@
+/** @format */
+
+.farmertableContainer {
+  width: 100%;
+}
+
+.farmertableContainer table {
+  width: 100%;
+  text-align: left;
+}
+
+.farmertableContainer table,
+.farmertableContainer table tr,
+.farmertableContainer table th,
+.farmertableContainer table td {
+  border-collapse: collapse;
+}
+
+.farmertableContainer table th,
+.farmertableContainer table td {
+  padding: 15px 10px;
+  border-bottom: 1px solid #d4d5d9;
+}
+
+.farmertableContainer table td {
+  cursor: pointer;
+}
+
+.farmertableContainer table th {
+  cursor: default;
+}
+
+.farmertableContainer table tbody tr:hover {
+  background-color: var(--light-bg-color);
+}
+
+.noRequests {
+  text-align: center;
+  color: var(--secondary-text-color);
+  height: 200px;
+  cursor: default !important;
+}
+
+.noRequests td {
+  border-bottom: none !important;
+  cursor: default !important;
+}
+.noRequests:hover {
+  background: transparent !important;
+}

@@ -1,0 +1,48 @@
+/** @format */
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 280px;
+  /* background-color: var(--secondary-bg-color); */
+  background-image: url("/public/doodles/green.jpg");
+  height: 100vh;
+}
+
+.title {
+  color: var(--white-color);
+  font-weight: 600;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.title span {
+  font-size: 32px;
+}
+
+.links {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.links a {
+  color: var(--white-color);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+  transition: all 0.05s linear;
+}
+
+.links a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.links svg {
+  margin-right: 12px;
+}

@@ -1,0 +1,51 @@
+/** @format */
+
+.producttableContainer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.producttableContainer table {
+  width: 100%;
+  text-align: left;
+}
+
+.producttableContainer table,
+.producttableContainer table tr,
+.producttableContainer table th,
+.producttableContainer table td {
+  border-collapse: collapse;
+}
+
+.producttableContainer table th,
+.producttableContainer table td {
+  padding: 15px 10px;
+  border-bottom: 1px solid #d4d5d9;
+}
+
+.producttableContainer table td {
+  cursor: pointer;
+}
+
+.producttableContainer table th {
+  cursor: default;
+}
+
+.producttableContainer table tbody tr:hover {
+  background-color: var(--light-bg-color);
+}
+
+.noProducts {
+  text-align: center;
+  color: var(--secondary-text-color);
+  height: 200px;
+  cursor: default !important;
+}
+
+.noProducts td {
+  border-bottom: none !important;
+  cursor: default !important;
+}
+.noProducts:hover {
+  background: transparent !important;
+}
