@@ -3,11 +3,14 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../../context/authContext";
 import axios from "../../../helpers/axios";
+import EditProductsModal from "../EditProductsModal/EditProductsModal";
 import ProductDetailsModal from "../ProductDetailsModal/ProductDetailsModal";
 import styles from "./ProductsTable.module.css";
 
 export default function FarmerRow({ product, fetchProducts }) {
   const [showDetailsModal, setShowDetailsModal] = useState(false);
+  const [showEditModal, setShowEditModal] = useState(false);
+
   const { currentUser } = useContext(AuthContext);
 
   async function handleDelete() {
@@ -34,6 +37,15 @@ export default function FarmerRow({ product, fetchProducts }) {
           fetchProducts={fetchProducts}
         />
       )}
+
+      {showEditModal && (
+        <EditProductsModal
+          setShowEditModal={setShowEditModal}
+          product={product}
+          fetchProducts={fetchProducts}
+        />
+      )}
+
       <tr>
         <td onClick={() => setShowDetailsModal(true)}>{product.productName}</td>
         <td onClick={() => setShowDetailsModal(true)}>{product.productCategory}</td>
@@ -42,6 +54,9 @@ export default function FarmerRow({ product, fetchProducts }) {
           ₹{product.productPrice} per {product.measurement}
         </td>
         <td>
+          <button className={styles.editButton} onClick={() => setShowEditModal(true)}>
+            Edit
+          </button>
           <button className={styles.deleteButton} onClick={handleDelete}>
             Delete
           </button>
